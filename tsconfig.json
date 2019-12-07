@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"typeRoots": [ "node_modules/@types" ],
+		"checkJs": true,
+		"allowJs": true,
+		"noEmit": true,
+		"jsx": "react",
+		"rootDirs": [ "src" ]
+	},
+	"include": [
+		"src/**/*.tsx",
+		"src/**/*.ts",
+		"src/**/*.js",
+		"src/**/*.jsx"
+	],
+	"exclude": [ "node_modules" ]
+}
