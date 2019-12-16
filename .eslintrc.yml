@@ -52,3 +52,4 @@ rules:
   'react/prop-types': error
   'react/no-unused-prop-types': error
   'react/jsx-key': error
+  'react/display-name': off
