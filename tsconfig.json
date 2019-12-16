@@ -6,7 +6,8 @@
 		"allowJs": true,
 		"noEmit": true,
 		"jsx": "react",
-		"rootDirs": [ "src" ]
+		"rootDirs": [ "src" ],
+		"baseUrl": "src"
 	},
 	"include": [
 		"src/**/*.tsx",
