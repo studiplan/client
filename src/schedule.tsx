@@ -10,7 +10,7 @@ import { Segment, Grid } from 'semantic-ui-react';
 
 function Schedule(props): ReactElement {
 	return (
-		<Segment placeholder>
+		<Segment placeholder style={{ height: '1000px' }}>
 			<Grid columns={2} relaxed='very' stackable>
 				<Grid.Column>
                     ONE

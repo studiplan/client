@@ -5,7 +5,7 @@ import Schedule from 'schedule';
 
 function Pane(children): () => ReactElement {
 	return (): ReactElement => (
-		<Tab.Pane style={{ height: '93%' }} attached='top'>
+		<Tab.Pane style={{ height: '93%', overflowX: 'hidden', overflowY: 'auto' }} attached='top'>
 			{children}
 		</Tab.Pane>
 	);
