@@ -5,7 +5,7 @@ import Schedule from 'schedule';
 
 function Pane(children): () => ReactElement {
 	return (): ReactElement => (
-		<Tab.Pane style={{ height: '93%', overflowX: 'hidden', overflowY: 'auto' }} attached='top'>
+		<Tab.Pane style={{ height: '93vh', overflowX: 'hidden', overflowY: 'auto' }} attached='top'>
 			{children}
 		</Tab.Pane>
 	);
@@ -28,7 +28,7 @@ const panes = [
 
 const TabNavigator = (): ReactElement => (
 	<Tab
-		menu={{ attached: 'bottom', fluid: true, widths: panes.length, style: { height: '7%' } }}
+		menu={{ attached: 'bottom', widths: panes.length, style: { height: '7vh' } }}
 		style={{ height: '100vh' }}
 		panes={panes}
 	/>
