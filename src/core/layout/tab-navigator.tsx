@@ -2,6 +2,7 @@ import React, { ReactElement } from 'react';
 import { Tab } from 'semantic-ui-react';
 
 import Schedule from 'schedule';
+import Courses from 'sites/courses';
 
 function Pane(children): () => ReactElement {
 	return (): ReactElement => (
@@ -18,7 +19,7 @@ const panes = [
 	},
 	{
 		menuItem: { key: 'courses', content: 'Courses', icon: 'rocket' },
-		render: Pane('courses'),
+		render: Pane(<Courses />),
 	},
 	{
 		menuItem: { key: 'settings', content: 'Settings', icon: 'settings' },
@@ -28,6 +29,7 @@ const panes = [
 
 const TabNavigator = (): ReactElement => (
 	<Tab
+		defaultActiveIndex={1} // TODO adjust for development
 		menu={{ attached: 'bottom', fluid: true, widths: panes.length, style: { height: '7%' } }}
 		style={{ height: '100vh' }}
 		panes={panes}

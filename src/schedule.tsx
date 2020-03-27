@@ -10,14 +10,14 @@ import { Segment, Grid } from 'semantic-ui-react';
 
 function Schedule(props): ReactElement {
 	return (
-		<Segment placeholder style={{ height: '1000px' }}>
+		<Segment placeholder>
 			<Grid columns={2} relaxed='very' stackable>
 				<Grid.Column>
-                    ONE
+					ONE
 				</Grid.Column>
 
 				<Grid.Column verticalAlign='middle'>
-                    TWO
+					TWO
 				</Grid.Column>
 			</Grid>
 		</Segment>

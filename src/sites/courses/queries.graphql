@@ -1,0 +1,12 @@
+query getActivities($userId: ID!) {
+  user(userId: $userId) {
+    id
+    activities(type: Course) {
+      id
+      type
+      name
+      exclusive
+      during
+    }
+  }
+}
